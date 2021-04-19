@@ -1,0 +1,28 @@
+.privacy {
+  background:$blue;
+  position:relative;
+
+  .content {
+    text-align:left;
+  }
+  h1, h2, p {
+    max-width:900px;
+  }
+  h2 {
+    margin-top:40px;
+  }
+}
+.ech-logo {
+  svg {
+    max-width:100%;
+    height:auto;
+    margin:40px 0;
+    width:150px;
+  }
+}
+
+@media (min-width: 768px){
+  .privacy {
+      padding-bottom:100px;
+  }
+}

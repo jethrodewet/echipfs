@@ -1,0 +1,23 @@
+// FONT: enqueue via functions.php
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+// Vars - here so we can override some Bootstrap defaults
+$white: #fff;
+$black:#000;
+$blue:blue;
+$salmon:#F5938B;
+$purple:#3F425A;
+$green:green;
+
+// bootstrap
+// @import 'bootstrap';
+
+// theme
+@import '_overall';
+@import '_background-video';
+@import '_buttons';
+@import '_footer';
+@import '_privacy';
+@import '_longevity-clients';
+@import '_contact';
+@import '_bad';

@@ -1,0 +1,77 @@
+.top-section {
+//	min-height:100vh;
+}
+.longevity-clients {
+	background:$white;
+	color:$salmon;
+	font-size:24px;
+	text-align: center;
+	padding:50px 0;
+	position:relative;
+
+	.container {
+		max-width:940px;
+		margin:0 auto;
+		padding:0 15px;
+	}
+	h2 {
+		margin:0;
+		font-weight:300;
+		font-size:1em;
+	}
+	.longevity {
+		span {
+			display:block;
+			color:$blue;
+			font-size:100px;
+			margin-top:10px;
+		}
+		a {
+			color:$blue;
+
+			&:hover, &:focus {
+				color:$purple;
+			}
+		}
+	}
+
+	.clients {
+		margin-top:25px;
+	}
+	img {
+		display:block;
+		max-width:100%;
+		height:auto;
+		margin-top:30px;
+	}
+}
+@media (min-width: 768px){
+	.top-section {
+		min-height:100vh;
+	}
+	.top-section-inner {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+	}
+	.longevity-clients {
+		padding:100px 0;
+
+		.container {
+			padding:0 30px;
+		}
+
+		h2 {
+			font-size:1.2em;
+		}
+		.longevity {
+			span {
+				font-size:120px;
+			}
+		}
+	}
+	.clients {
+		margin-top:50px;
+	}
+}

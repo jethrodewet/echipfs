@@ -1,0 +1,47 @@
+.btn {
+  display:inline-block;
+  text-decoration: none;
+  background:$white;
+  color:$blue;
+  border-radius:50px;
+  padding:9px 13px;
+  letter-spacing: 0.5px;
+  cursor:pointer;
+  transition:0.25s ease;
+
+  &:hover {
+    background:$black;
+    color:$white;
+    text-decoration: none;
+  }
+}
+.btn-secondary {
+  background:$purple !important;
+  color:$white !important;
+  text-transform: uppercase;
+  padding:12px 25px;
+  border-radius:10px;
+  font-size:14px;
+  border:0;
+  font-weight:400;
+
+  &:hover, &:focus {
+    background:$white !important;
+    color:$purple !important;
+  }
+}
+.buttons-row {
+  text-align: center;
+  margin-top:30px;
+}
+
+@media (min-width: 768px){
+  .btn {
+    background:$blue;
+    color:$white;
+
+    &:hover {
+      background:$black;
+    }
+  }
+}

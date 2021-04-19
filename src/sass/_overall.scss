@@ -1,0 +1,107 @@
+body {
+	background:$blue;
+	color:$white;
+	font-family:$font-family-sans-serif;
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-weight:300;
+	-webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+p {
+	margin:0 0 1em;
+}
+// technique from https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally
+.content {
+	color:$white;
+	text-align:center;
+
+	.video-wrapper {
+		position:relative;
+		margin-bottom:40px;
+	}
+
+	.ech-intro {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+
+		svg {
+			max-width:100%;
+			height:auto;
+			margin:40px 0;
+			width:150px;
+		}
+	}
+	.ech-heading {
+
+		h1 {
+			font-weight:300;
+			margin-top:0;
+		}
+		.btn {
+			margin:20px 0;
+		}
+	}
+	.ech-caption {
+		padding:20px 0;
+		font-size:1.1em;
+
+		a {
+			color:$white;
+
+			&:hover {
+
+			}
+		}
+		p {
+			line-height:1.5em;
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.container {
+		padding:0 30px;
+	}
+}
+
+@media (min-width: 768px){
+	body {
+		background:$black;
+	}
+	.content {
+		text-align:left;
+
+		.ech-intro {
+			position:static;
+			transform:none;
+		}
+		.video-wrapper {
+			margin-bottom:0;
+		}
+		.ech-heading {
+			h1 {
+				margin-left:15px;
+			}
+			.btn {
+					margin:0 0 0 15px;
+			}
+		}
+	}
+	.container {
+		padding:0 50px;
+	}
+	.ech-caption {
+		background:$blue;
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+	}
+}
